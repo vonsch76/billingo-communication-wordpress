@@ -1,3 +1,5 @@
+<?php
+
 function billingorequest( $proto, $page, $parameters = null, $arguments = null) {
 			
 	$url = 'https://api.billingo.hu/v3' . $page;
