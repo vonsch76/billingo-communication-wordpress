@@ -10,7 +10,7 @@ example #1 - list all invoices
 proto: GET
 page: /documents
 parameters: e.g. block_id, partner_id, etc.
-arguments: 
+arguments: (none required)
 
 example #2 - create an invoice
 proto: POST
@@ -22,7 +22,7 @@ example #3 - get an invoice details
 proto: GET
 page: /documents
 parameters: {id}
-arguments: all the parameters required, partner_id, block_id, currency, date, invoice_items, etc.
+arguments: (none required)
 
 Check Billingo API v3 documentation for details.
 Proto: GET, POST, PUT, DELETE
