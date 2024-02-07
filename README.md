@@ -24,6 +24,45 @@ page: /documents
 parameters: {id}
 arguments: (none required)
 
-Check Billingo API v3 documentation for details.
+with data - create an invoice
+
+example #4 - create a receipt
+proto: POST
+page: /documents/receipt
+parameters: 
+arguments: 
+Array
+(
+    [name] => customername
+    [emails] => Array
+        (
+            [0] => customermail@mail.com
+        )
+
+    [phone] => customerphone
+    [block_id] => billingo block id
+    [type] => receipt
+    [payment_method] => bankcard
+    [currency] => EUR
+    [electronic] => 1
+    [conversion_rate] => 382.42
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [name] => receipt on order 235521957
+                    [unit_price] => 2234
+                    [vat] => 27%
+                )
+
+        )
+
+)
+
+Check Billingo API v3 documentation for details. Mandatory fields, etc.
+
 Proto: GET, POST, PUT, DELETE
-page: many... /documents 
+page: many... /documents, /partners, /products
+parameters: {id}, etc.
+arguments: plenty, see Billingo documentation (schema) for the required arguments on each page
+
