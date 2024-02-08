@@ -58,6 +58,8 @@ arguments:
 
 Reply: 201 and receipt data when successful. 4xx in case of error, details are in the body.
 
+Creating an invoice is usually 2 steps: a) you need to create a partner,then b) create an invoice with partner data.
+
 Check Billingo API v3 documentation for details. Mandatory fields, etc.
 
 Proto: GET, POST, PUT, DELETE
