@@ -31,14 +31,13 @@ proto: POST
 page: /documents/receipt
 parameters: 
 arguments: 
-Array
+
 (
     [name] => customername
     [emails] => Array
         (
             [0] => customermail@mail.com
         )
-
     [phone] => customerphone
     [block_id] => billingo block id
     [type] => receipt
@@ -54,10 +53,10 @@ Array
                     [unit_price] => 2234
                     [vat] => 27%
                 )
-
         )
-
 )
+
+Reply: 201 and receipt data when successful. 4xx in case of error, details are in the body.
 
 Check Billingo API v3 documentation for details. Mandatory fields, etc.
 
